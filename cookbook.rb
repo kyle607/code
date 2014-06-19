@@ -5,8 +5,9 @@ class Cookbook
     @title = title
     @recipes = []
   end
-  def add_recipe(food_item)
-    @recipes.push(food_item)
+  def add_recipe(recipe)
+    @recipes.push(recipe)
+    puts "Added a recipe to the collection: #{recipe.title}"
   end
 end
 
